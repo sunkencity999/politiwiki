@@ -1,4 +1,15 @@
 Politiwiki::Application.routes.draw do
+  get "wiki/index"
+  get "wiki/edit"
+  get "wiki/show"
+  get "wiki/collaborators"
+  devise_for :users
+  get "welcome/index"
+  get "welcome/free"
+  get "welcome/premium"
+
+  root :to => "welcome#index"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

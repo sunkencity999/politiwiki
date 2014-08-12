@@ -47,6 +47,13 @@ gem 'stripe'
 
 gem 'friendly_id'
 
+group :test do
+  gem 'rspec-rails'
+end
+
+gem 'bootstrap'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
