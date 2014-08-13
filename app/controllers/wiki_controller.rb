@@ -1,5 +1,6 @@
 class WikiController < ApplicationController
   def index
+    @wikis = Wiki.visible_to(current_user)
   end
 
   def edit

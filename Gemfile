@@ -51,7 +51,7 @@ group :test do
   gem 'rspec-rails'
 end
 
-gem 'bootstrap'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'figaro'
 
