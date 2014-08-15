@@ -55,6 +55,10 @@ gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'figaro'
 
+gem 'simple_form'
+
+gem 'epic-editor-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -1,2 +1,24 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<br/>
+<div class="page-header">
+  <p class="lead">Politiwiki</p>
+  <p>Share information, create community!</p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or 
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Inform.</h2>
+    <p>Use Politiwiki to share information about the politicians that matter to you. Let's keep folk honest. </p>
+  </div>
+  <div class="col-md-4">
+    <h2>Include.</h2>
+    <p>Invite collaborators to help curate your information. Learned collaborators make for information-based communities.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Influence.</h2>
+    <p>Politicians like to control the way information is "spun". With Politiwiki, you can cut through the spin to get real information to the right people: the voters. </p>
+  </div>
+</div>

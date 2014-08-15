@@ -1,0 +1,21 @@
+
+<h1> New Wiki </h1>
+
+<div class="row"<
+  <div class="col-md-4">
+    <p> Creating a new Wiki </p>
+      <ul>
+        <li> Use markdown to style your Wiki. </li>
+        <li> Include accurate information, and link to references. </li>
+        <li> Controversy is only a problem when information isn't accurate. </li>
+        <li> Invite collaborators who can help curate the information. </li>
+      </ul>
+  </div>
+      <div class="col-md-8">
+        <%= simple_form_for @wiki do |f| %>
+          <%= f.input :title, label: 'Enter your wikis title here' %>
+          <div id="epiceditor"> <%= f.input :body, label: 'Enter your information here' %><script type="text/javascript"> var editor = new EpicEditor().load();</script></div>
+          <%= f.button :submit, label: 'Save' %>
+        <% end %>
+      </div>
+</div>      

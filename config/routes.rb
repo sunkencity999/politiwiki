@@ -1,12 +1,13 @@
 Politiwiki::Application.routes.draw do
-  get "wiki/index"
-  get "wiki/edit"
-  get "wiki/show"
-  get "wiki/collaborators"
+  resources :wikis 
+  resources :collaborators
+    
+
+
   devise_for :users
-  get "welcome/index"
-  get "welcome/free"
-  get "welcome/premium"
+  
+  get 'free' => 'welcome#free'
+  get 'premium' => 'welcome#premium'
 
   root :to => "welcome#index"
   
